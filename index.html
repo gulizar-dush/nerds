@@ -33,7 +33,7 @@
                     <h2>Долго, дорого,<br>скрупулезно.</h2>
                   <p>Математически выверенный дизайн<br>для вашего 
                     сайта или мобильного приложения.</p>
-                    <a href="uznat-bolshe.html">Узнать больше</a>
+                    <button type="submit">Узнать больше</button>
                   </span>
                   <span>
                    <img src="img/telefon's.png" alt="Картинка"> 
@@ -43,7 +43,7 @@
                 <span>
                     <h2>Любим математику<br>как никто другой</h2>
                   <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-                    <a href="uznat-bolshe.html">Узнать больше</a>
+                  <button type="submit">Узнать больше</button>
                   </span>
                   <span>
                    <img src="img/komputer's.png" alt="Картинка"> 
@@ -53,14 +53,16 @@
                 <span>
                     <h2>Только ночь,<br>только хардкор</h2>
                   <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-                    <a href="uznat-bolshe.html">Узнать больше</a>
+                  <button type="submit">Узнать больше</button>
                   </span>
                   <span>
                    <img src="img/planshet_and_telefon.png" alt="Картинка"> 
                   </span>
             </li>
           </ul>
-          
+          <input type="radio" name="product-group" value="text1" id="text1" checked>
+          <input type="radio" name="product-group" value="text2" id="text2">
+          <input type="radio" name="product-group" value="text3" id="text3">
         </div>
       </section>
       <section>
@@ -70,21 +72,21 @@
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним<br> 
               после того как увидет ваш сайт!</p>
-              <a href="zakazat.html">Заказать</a>
+              <button type="submit">Заказать</button>
           </li>
           <li>
               <img src="img/illustration-2.png" alt="Приложения">
               <h3>Приложения</h3>
               <p>Покорите топ-10 приложений в<br> 
                 AppStore и Google Play</p>
-                <a href="zakazat.html">Заказать</a>
+                <button type="submit">Заказать</button>
           </li>
           <li>
               <img src="img/illustration-3.png" alt="Презентации">
               <h3>Презентации</h3>
               <p>Вы даже не подозреваете,<br> 
                 насколько вы изумительны!</p>
-                <a href="#">Заказать</a>
+                <button type="submit">Заказать</button>
           </li>
         </ul>
       </section>
@@ -155,6 +157,13 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </span>
     </footer>
-
+    <h2>Напишите нам</h2>
+    <label for="vashe_imy">Ваше имя:</label>
+    <input type="text" value="Имя Фамилия" id="vashe_imy">
+    <label for="vash_e-mail">Ваш e-mail:</label>
+    <input type="text" value="email@example.com" id="vash_e-mail">
+    <label for="text_pisma">Текст письма:</label>
+    <textarea name="text_pisma" id="text_pisma">В свободной форме</textarea>
+    <button>Отправить</button>
   </body>
 </html>

@@ -29,26 +29,56 @@
         <div>
             <section>
             <h3>Стоимость:</h3>
+            <input type="range" min="0" max="15 000" step="1"> 
             <h3>Сортировать:</h3>
             <p><a href="#">По цене</a> <a href="#">По типу</a></p>
         </section>
         <section>
-            <h3>Сетка:</h3>
-            <ul>
-                <li>Адаптивная</li>
-                <li>Фиксированная</li>
-                <li>Резиновая</li>
-            </ul>
-
-            <h3>Особенности:</h3>
-            <ul>
-                <li>Слайдер</li>
-                <li>Блок преимкществ</li>
-                <li>Новости</li>
-                <li>Галерея</li>
-                <li>Корзина</li>
-            </ul>
-            <a href="#">Показать</a>
+            <form method="get" action="#">
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="product-group" value="adaptiv" id="adaptiv" checked>
+                            <label for="adaptiv">Адаптивная</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="product" value="fiksir" id="fiksir">
+                            <label for="fiksir">Фиксированная </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="group" value="rezinov" id="rezinov">
+                            <label for="rezinov">Резиновая</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                        <ul>
+                            <li>
+                              <input type="checkbox" name="slider" id="slider" checked>
+                              <label for="slider">Слайдер</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" name="blok" id="blok">
+                              <label for="blok">Блок преимкществ</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" name="novost" id="novost" checked>
+                              <label for="novost">Новости</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="galerey" id="galerey">
+                                <label for="galerey">Галерея</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="korzina" id="korzina">
+                                <label for="korzina">Корзина</label>
+                            </li>
+                        </ul>
+                </fieldset>
+                    <button type="submit">Показать</button>
+            </form>
         </section>
         <section>
             <ul>
@@ -61,9 +91,9 @@
             </ul>
             <ul>
                 <li>1</li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">Следующая</a></li>
+                <li><button type="submit">2</button></li>
+                <li><button type="submit">3</button></li>
+                <li><button type="submit">Следующая</button></li>
             </ul>
         </section>
         <section>
@@ -88,6 +118,13 @@
         <h3>Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
-
+    <h2>Напишите нам</h2>
+    <label for="vashe_imy">Ваше имя:</label>
+    <input type="text" value="Имя Фамилия" id="vashe_imy">
+    <label for="vash_e-mail">Ваш e-mail:</label>
+    <input type="text" value="email@example.com" id="vash_e-mail">
+    <label for="text_pisma">Текст письма:</label>
+    <textarea name="text_pisma" id="text_pisma">В свободной форме</textarea>
+    <button>Отправить</button>
   </body>
 </html>
