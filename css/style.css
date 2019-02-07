@@ -1,0 +1,34 @@
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.color_morskoi {
+    color: #283136;
+}
+
+header a,
+.a_black {
+    color: #000000;
+}
+
+.color_grey {
+    color: #283136;
+}
+
+.svetlo {
+    color: #666666;
+}
+
+.polevoda {
+    color: #444444;
+}
+
+.verh,
+.h1_header,
+header {
+    background-color: #eeeeee;
+}
+
+.sortirovat {
+    color: #b2b2b2;
+}
